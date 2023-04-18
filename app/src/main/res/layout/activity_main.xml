@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edCodigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/txtCodigo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtNome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edCodigo"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/edCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/edCodigo" />
+
+    <EditText
+        android:id="@+id/edPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtPreco"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/edNome"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/edNome"
+        app:layout_constraintTop_toBottomOf="@+id/edNome" />
+
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txtCadastrarProd"
+        app:layout_constraintEnd_toEndOf="@+id/edPreco"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edPreco"
+        app:layout_constraintTop_toBottomOf="@+id/edQuantidade" />
+
+    <Button
+        android:id="@+id/btRemover"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtApagar"
+        app:layout_constraintEnd_toEndOf="@+id/btCadastrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/btCadastrar" />
+
+    <Button
+        android:id="@+id/btListar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtListar"
+        app:layout_constraintEnd_toEndOf="@+id/btRemover"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btRemover"
+        app:layout_constraintTop_toBottomOf="@+id/btBuscar" />
+
+    <Button
+        android:id="@+id/btAtualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtAtualizarProd"
+        app:layout_constraintEnd_toEndOf="@+id/btRemover"
+        app:layout_constraintStart_toStartOf="@+id/btRemover"
+        app:layout_constraintTop_toBottomOf="@+id/btRemover" />
+
+    <Button
+        android:id="@+id/btBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtBuscar"
+        app:layout_constraintEnd_toEndOf="@+id/btAtualizar"
+        app:layout_constraintStart_toStartOf="@+id/btAtualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btAtualizar" />
+
+    <EditText
+        android:id="@+id/edQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtQuantidade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edPreco"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/edPreco"
+        app:layout_constraintTop_toBottomOf="@+id/edPreco" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

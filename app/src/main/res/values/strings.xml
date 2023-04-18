@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WebService</string>
+    <string name="txtCodigo">Informe o código do produto</string>
+    <string name="txtNome">Informe o nome</string>
+    <string name="txtPreco">Informe o preço</string>
+    <string name="txtQuantidade">Informe a quantidade</string>
+    <string name="txtCadastrarProd">Cadastrar</string>
+    <string name="txtAtualizarProd">Atualizar</string>
+    <string name="txtApagar">Remover</string>
+    <string name="txtBuscar">Buscar produto por código</string>
+    <string name="txtListar">Listar todos</string>
+</resources>
